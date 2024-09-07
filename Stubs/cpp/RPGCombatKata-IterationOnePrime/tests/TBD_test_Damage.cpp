@@ -4,8 +4,6 @@
 using fakeit::Mock;
 using fakeit::When;
 
-#pragma once
-
 TEST_SUITE_BEGIN("unit");
 
 TEST_CASE("A failing test"){
