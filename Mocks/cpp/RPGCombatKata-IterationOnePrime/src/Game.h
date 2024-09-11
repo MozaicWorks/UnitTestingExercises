@@ -8,18 +8,20 @@ using std::cout;
 using std::endl;
 
 class Game{
+	private:
+		Character& arthur;
+		Character& mordred;
+		const Character& merlin;
+		const CharacterWriter& arthurWriter;
+
 	public: 
+
+		Game(Character& arthur, Character& mordred, const Character& merlin, const CharacterWriter& arthurWriter) : arthur(arthur), mordred(mordred), merlin(merlin), arthurWriter(arthurWriter){}
 
 		void run(){
 			Dice20Faces d20;
 			DamageCalculator damageCalculator(d20);
 
-
-			Character arthur;
-			Character mordred;
-			Character merlin;
-
-			CharacterWriter arthurWriter(arthur);
 			const std::string arthurFileName = "arthur.txt";
 
 			bool isHealing = true;

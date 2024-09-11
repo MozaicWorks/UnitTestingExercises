@@ -10,7 +10,7 @@ class CharacterWriter{
 	public:
 		CharacterWriter(const Character& character): character(character){}
 
-		void write(std::string fileName){
+		void write(std::string fileName) const{
 			// Write the character data to a text file named fileName in the format: health, level, isAlive
 			// For example: 1000, 1, true
 			// Or: 100, 1, true
